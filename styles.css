@@ -1,0 +1,97 @@
+*{
+    font-family: "Red Hat Text", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(20, 50%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+main{
+    margin-top: 60px;
+    /* margin: 40px; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 110px;
+}
+.section-products{
+    padding: 10px;
+}
+.products{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.product{
+    position: relative;
+}
+.img img{
+    cursor: pointer;
+    height: 180px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
+.img img:hover{
+        border: 3px solid red;
+}
+.cart{
+    display: grid;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    max-height: 300px; 
+    overflow-y: auto; 
+    transition: max-height 0.3s ease; 
+
+}
+.cart-title{
+    color: rgb(190, 43, 43);
+}
+.title{
+    margin-bottom: 30px;
+}
+.buy{
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(155, 42, 42);
+    color: black;
+    top:  50%;
+    font-size: 15px;
+    cursor: pointer;
+    left: 14%;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 50px;
+}
+
+.name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.category{
+   margin-top: 30px;
+   color: gray;
+}
+.price, .empty{
+    color: rgb(189, 71, 71);
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+
+.attribution {font-size: 15px; text-align: center; }
+.attribution a {color: hsl(228, 45%, 44%); }
